@@ -10,6 +10,9 @@ function Header() {
     setIsOpen(!isOpen)
   };
 
+  let HandleOnClick = !isOpen ? toggleMenu : null;
+
+  // Closing the musing by clicking outside //
   useEffect(() => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
@@ -24,11 +27,8 @@ function Header() {
     };
   }, [setIsOpen]);
 
-  let HandleOnClick = !isOpen ? toggleMenu : null;
-
   return (
     <div
-      ref={menuRef}
       className="bg-alabaster flex justify-between items-center h-32">
       <div className="logotype mx-10">
         <a href="">
@@ -36,6 +36,7 @@ function Header() {
         </a>
       </div>
       <div
+        ref={menuRef}
         onClick={HandleOnClick}
         className={`menuContainer z-10 bg-racing-lime flex items-end absolute top-0 right-0 transition-all duration-700 p-10 ${
           isOpen ? "w-full h-3/4" : "w-32 h-32 cursor-pointer"

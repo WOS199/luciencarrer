@@ -25,7 +25,7 @@ export default {
         }
       },
       animation: {
-        FadeIn: 'FadeIn 700ms ease-in-out',
+        FadeIn: 'FadeIn 500ms ease-in-out',
         FadeOut: 'FadeOut 100ms ease-in-out forwards'
       },
       colors: {

@@ -10,7 +10,7 @@ function FadeInMount ({isOpen, children}) {
             setTimeout(() => {
                 setIsMounting(true)
                 setShowChildren(true)
-            }, 500)
+            }, 400)
         } else {
             setIsMounting(false)
             setTimeout(() => {
