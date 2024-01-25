@@ -30,9 +30,9 @@ export default {
         FadeOut: 'FadeOut 100ms ease-in-out forwards'
       },
       colors: {
-        'alabaster': '#E9EADD',
+        'alabaster': '#F0F1E4',
         'racing-lime': '#caff00',
-        'dark-linen': '#143021'
+        'dark-linen': '#1E4731'
       }
     },
   },

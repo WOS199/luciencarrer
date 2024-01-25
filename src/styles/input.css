@@ -38,3 +38,10 @@
     src: url(../src/fonts/HolandCentury/HolandCentury-Black.woff2) format("woff2");
   }
 }
+
+/*----- HERO SPOTLIGHT EFFECT -----*/
+
+.heroFront {
+  --mask: radial-gradient(circle 700px at var(--x, 70%) var(--y, 50%), black 5%, transparent 100%);
+  mask-image: var(--mask);
+}

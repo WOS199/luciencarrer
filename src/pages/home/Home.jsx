@@ -1,9 +1,11 @@
 import Header from "../../components/header/Header";
+import Hero from "../../components/hero/Hero";
 
-function Home() {
+const Home = () => {
   return (
     <div className="w-screen h-screen bg-alabaster">
       <Header />
+      <Hero />
     </div>
   );
 }
