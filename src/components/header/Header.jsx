@@ -1,55 +1,53 @@
-import logo from "../../assets/135x15_logotype_green.webp";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Menu from "../menu/Menu";
 import FadeInMount from "../FadeInMount/FadeInMount";
 
-function Header() {
-  const menuRef = useRef();
+const Header = () => {
+
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpening, setIsOpening] = useState(false);
+
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    if (!isOpen) {
+      setIsOpen(true);
+      setIsOpening(true);
+    }
+    if (isOpen) {
+      setIsOpening(false);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 100);
+    }
   };
 
   let HandleOnClick = !isOpen ? toggleMenu : null;
 
-  // Closing the musing by clicking outside //
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handler);
-
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, [setIsOpen]);
-
   return (
-    <div
-      className="bg-alabaster flex justify-between items-center h-32">
-      <div className="logotype mx-10">
+    <div className="bg-alabaster flex items-center h-32 px-10">
+      <div className="logotype">
         <a href="">
-          <img src={logo} alt="Lucien Carrer" />
+          <p className="font-sans font-light text-xs absolute top-[52px] max-w-24">
+            front-end dev <br />& digital creative director
+          </p>
         </a>
       </div>
+      <p className="my-0 mx-auto font-secondary font-medium italic text-xs">Lucien Carrer</p>
       <div
-        ref={menuRef}
         onClick={HandleOnClick}
-        className={`menuContainer z-10 bg-racing-lime flex items-end absolute top-0 right-0 transition-all duration-700 p-10 ${
-          isOpen ? "w-full h-3/4" : "w-32 h-32 cursor-pointer"
+        className={`menuContainer z-10 bg-racing-lime absolute top-0 right-0 transition-all duration-700 px-10 ${
+          isOpen ? "w-full h-full" : "w-32 h-32 cursor-pointer"
         }`}>
-        <p onClick={toggleMenu} className="cursor-pointer font-sans absolute top-[52px] right-10 text-dark-linen">
+        <p
+          onClick={toggleMenu}
+          className="cursor-pointer font-sans font-light text-xs absolute top-[52px] right-[45px] text-dark-linen">
           {isOpen ? "close" : "menu"}
         </p>
-        <FadeInMount isOpen={isOpen}>
+        <FadeInMount isOpen={isOpen} isOpening={isOpening}>
           <Menu />
         </FadeInMount>
       </div>
     </div>
   );
-}
+};
 
 export default Header;

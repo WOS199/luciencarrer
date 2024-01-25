@@ -3,7 +3,8 @@ export default {
   content: ["./src/**/*.jsx"],
   theme: {
     fontFamily: {
-      'sans': ['Geist']
+      'sans': ['Geist'],
+      'secondary': ['HolandCentury']
     },
     extend: {
       keyframes: {

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 
-function FadeInMount ({isOpen, children}) {
+function FadeInMount ({isOpen, isOpening, children}) {
     const [showChildren, setShowChildren] = useState(isOpen)
     const [isMounting, setIsMounting] = useState(isOpen)
     
 
     useEffect(() => {
-        if(isOpen) {
+        if(isOpening) {
             setTimeout(() => {
                 setIsMounting(true)
                 setShowChildren(true)
@@ -15,9 +15,9 @@ function FadeInMount ({isOpen, children}) {
             setIsMounting(false)
             setTimeout(() => {
                 setShowChildren(false)
-            }, 300)
+            }, 100)
         }
-    }, [isOpen])
+    }, [isOpening])
 
     let classNames = `${isMounting ? 'animate-FadeIn' : 'animate-FadeOut'}`
 
