@@ -13,31 +13,31 @@ const Menu = () => {
     <div className="mt-40 md:mt-2">
       <div className="overflow-hidden">
         <p
-          className={`font-bold text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 cursor-pointer transition-all duration-500 ${onMount}`}>
-          Parcours
+          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 ${onMount}`}>
+          <span className="hover:underline">Parcours</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-bold text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 cursor-pointer transition-all duration-500 delay-100 ${onMount}`}>
-          Expériences
+          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
+          <span className="hover:underline">Expériences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-bold text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 cursor-pointer transition-all duration-500 delay-200 ${onMount}`}>
-          Compétences
+          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
+          <span className="hover:underline">Compétences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-bold text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 cursor-pointer transition-all duration-500 delay-300 ${onMount}`}>
-          Projets
+          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
+          <span className="hover:underline">Projets</span>
         </p>
       </div>
       <div className="overflow-hidden absolute bottom-10 right-10">
         <p
-          className={`font-secondary italic font-medium text-4xl text-dark-linen mt-4 cursor-pointer transition-all duration-500 delay-500 ${onMount}`}>
+          className={`font-secondary italic font-medium text-4xl text-dark-linen mt-4 transition-all duration-500 delay-500 ${onMount}`}>
           Contact
         </p>
       </div>

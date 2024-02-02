@@ -13,7 +13,7 @@
   @font-face {
     font-family: Geist;
     font-weight: 200;
-    src: url(../src/fonts/Geist/Geist-Light.woff2) format("woff2");
+    src: url(../src/fonts/Geist/Geist-UltraLight.woff2) format("woff2");
   }
   @font-face {
     font-family: Geist;
@@ -24,24 +24,45 @@
     font-family: HolandCentury;
     font-weight: 500;
     font-style: italic;
-    src: url(../src/fonts/HolandCentury/HolandCentury-MediumOblique.woff2) format("woff2");
+    src: url(../src/fonts/HolandCentury/HolandCentury-MediumOblique.woff2)
+      format("woff2");
   }
   @font-face {
     font-family: HolandCentury;
     font-weight: 400;
     font-style: italic;
-    src: url(../src/fonts/HolandCentury/HolandCentury-Oblique.woff2) format("woff2");
+    src: url(../src/fonts/HolandCentury/HolandCentury-Oblique.woff2)
+      format("woff2");
   }
   @font-face {
     font-family: HolandCentury;
     font-weight: 700;
-    src: url(../src/fonts/HolandCentury/HolandCentury-Black.woff2) format("woff2");
+    src: url(../src/fonts/HolandCentury/HolandCentury-Black.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: HolandCentury;
+    font-weight: 300;
+    font-style: italic;
+    src: url(../src/fonts/HolandCentury/HolandCentury-LightOblique.woff2)
+      format("woff2");
   }
 }
 
 /*----- HERO SPOTLIGHT EFFECT -----*/
 
 .heroFront {
-  --mask: radial-gradient(circle 700px at var(--x, 70%) var(--y, 50%), black 5%, transparent 100%);
+  --mask: radial-gradient(
+    circle 500px at var(--x, 70%) var(--y, 50%),
+    black 5%,
+    transparent 100%
+  );
   mask-image: var(--mask);
+}
+
+/*----- CURSOR -----*/
+
+body, a {
+  cursor: url("../src/assets/cursor.svg") 16 16, auto;
+  
 }

@@ -7,6 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpening, setIsOpening] = useState(false);
   const [hoverRules, setHoverRules] = useState('hover:w-44 hover:h-44');
+  const [transitionRules, setTransitionRules] = useState('transition-all');
 
   const toggleMenu = () => {
     if (!isOpen) {
@@ -24,34 +25,31 @@ const Header = () => {
   useEffect(() => {
     if (isOpen) {
       setHoverRules('');
+      setTimeout(() => {
+        setTransitionRules('transition-none');
+      }, 1000);
     }
     if (!isOpen) {
       setTimeout(() => {
         setHoverRules('hover:w-44 hover:h-44')
       }, 1000);
+      setTransitionRules('transition-all')
     }
   })
 
   let HandleOnClick = !isOpen ? toggleMenu : null;
 
   return (
-    <div className="bg-alabaster flex items-center h-32 px-10">
-      <div className="logotype">
-        <a href="">
-          <p className="font-sans font-light text-xs absolute top-10 max-w-24 text-dark-linen">
-            front-end dev <br />& digital creative director
-          </p>
-        </a>
-      </div>
-      <p className="my-0 mx-auto font-secondary font-medium italic text-xs text-dark-linen">Lucien Carrer</p>
+    <>
+    <div className="bg-alabaster flex items-center h-16">
       <div
         onClick={HandleOnClick}
-        className={`menuContainer z-10 bg-racing-lime absolute top-0 right-0 transition-all duration-700 px-10 ${
-          isOpen ? "w-full h-full" : `w-32 h-32 cursor-pointer ${hoverRules}`
-        }`}>
+        className={`menuContainer z-10 bg-racing-lime absolute top-0 right-0 duration-700 px-10 ${
+          isOpen ? "w-screen h-screen" : `w-32 h-32 ${hoverRules}`
+        } ${transitionRules}`}>
         <p
           onClick={toggleMenu}
-          className="cursor-pointer font-sans font-light text-xs absolute top-14 right-[45px] text-dark-linen">
+          className="font-sans font-light text-xs absolute top-14 right-[42px] text-dark-linen">
           {isOpen ? "close" : "menu"}
         </p>
         <FadeInMount isOpen={isOpen} isOpening={isOpening}>
@@ -59,6 +57,7 @@ const Header = () => {
         </FadeInMount>
       </div>
     </div>
+    </>
   );
 };
 
