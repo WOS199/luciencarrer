@@ -23,16 +23,16 @@ const Hero = () => {
   return (
     <>
       <div className="heroBack absolute top-0 left-0 w-screen h-screen">
-        <div className="flex items-end w-full h-full pb-28 px-10">
+        <div className="flex items-end w-full h-full pb-10 px-10">
           <p className="font-secondary font-light italic text-7xl lg:text-8xl text-dark-linen select-none">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Développeur spécialisé front end et frameworks Javascript, je créée des applications et des interfaces digitales qui captivent et inspirent.
           </p>
         </div>
       </div>
       <div className="heroFront absolute top-0 left-0 w-screen h-screen hidden sm:block bg-cover bg-hero-pattern">
-        <div className="flex items-end w-full h-full pb-28 px-10">
+        <div className="flex items-end w-full h-full pb-10 px-10">
           <p className="font-secondary font-light italic text-7xl lg:text-8xl text-dark-linen select-none">
-            Lorem <span className="underline">ipsum dolor</span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <span className="underline">dolore magna</span> aliqua.
+          Développeur spécialisé front end et <span className="underline">frameworks Javascript</span>, je créée des applications et des <span className="underline">interfaces digitales</span> qui captivent et inspirent.
           </p>
         </div>
       </div>

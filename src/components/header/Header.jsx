@@ -8,6 +8,8 @@ const Header = () => {
   const [isOpening, setIsOpening] = useState(false);
   const [hoverRules, setHoverRules] = useState('hover:w-44 hover:h-44');
   const [transitionRules, setTransitionRules] = useState('transition-all');
+  const menuIcon = <img src="/assets/menuIcon.svg" alt="Open menu" />
+  const menuClose = <img src="/assets/menuClose.svg" alt="Close menu" />
 
   const toggleMenu = () => {
     if (!isOpen) {
@@ -49,8 +51,8 @@ const Header = () => {
         } ${transitionRules}`}>
         <p
           onClick={toggleMenu}
-          className="font-sans font-light text-xs absolute top-14 right-[42px] text-dark-linen">
-          {isOpen ? "close" : "menu"}
+          className="font-sans font-light text-xs absolute top-14 right-[52px] text-dark-linen">
+          {isOpen ? menuClose : menuIcon}
         </p>
         <FadeInMount isOpen={isOpen} isOpening={isOpening}>
           <Menu />

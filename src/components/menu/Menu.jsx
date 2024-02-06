@@ -35,12 +35,12 @@ const Menu = () => {
           <span className="hover:underline">Projets</span>
         </p>
       </div>
-      <div className="overflow-hidden absolute bottom-10 right-10">
+      {/* <div className="overflow-hidden absolute bottom-10 right-10">
         <p
           className={`font-secondary italic font-medium text-4xl text-dark-linen mt-4 transition-all duration-500 delay-500 ${onMount}`}>
           Contact
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

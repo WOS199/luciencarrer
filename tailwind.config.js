@@ -8,7 +8,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('../../src/assets/terrain.jpeg')",
+        "hero-pattern": "url('/assets/terrain.jpeg')",
       },
       keyframes: {
         FadeIn: {
