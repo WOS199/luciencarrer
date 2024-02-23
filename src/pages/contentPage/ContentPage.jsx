@@ -1,3 +1,4 @@
+import CustomCursor from "../../components/customCursor/CurstomCursor";
 import Header from "../../components/header/Header";
 import Image from "../../components/image/Image";
 import SectionChapter from "../../components/sectionChapter/SectionChapter";
@@ -100,6 +101,7 @@ const ContentPage = () => {
         </p>
         <div className="spacer h-40"></div>
       </div>
+      <CustomCursor/>
     </>
   );
 };

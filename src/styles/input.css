@@ -62,7 +62,10 @@
 
 /*----- CURSOR -----*/
 
-body, a {
-  cursor: url("/assets/cursor.svg") 16 16, auto;
-  
+/* body {
+  cursor: url("/assets/cursor.svg") 15 15, auto;
+} */
+
+a:hover .cursor {
+  transform: scale(2);
 }
