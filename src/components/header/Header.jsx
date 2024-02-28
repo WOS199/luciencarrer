@@ -46,7 +46,7 @@ const Header = () => {
     <div className="bg-alabaster flex items-center h-16">
       <div
         onClick={HandleOnClick}
-        className={`menuContainer z-10 bg-racing-lime absolute top-0 right-0 duration-700 px-10 ${
+        className={`menuContainer z-20 bg-racing-lime absolute top-0 right-0 duration-700 px-10 ${
           isOpen ? "w-screen h-screen" : `w-32 h-32 ${hoverRules}`
         } ${transitionRules}`}>
         <p
