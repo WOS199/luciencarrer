@@ -13,25 +13,25 @@ const Menu = () => {
     <div className="mt-40 md:mt-2">
       <div className="overflow-hidden">
         <p
-          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 ${onMount}`}>
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 ${onMount}`}>
           <span className="hover:underline">Parcours</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
           <span className="hover:underline">Expériences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
           <span className="hover:underline">Compétences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
-          className={`font-light text-4xl md:text-7xl xl:text-9xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
           <span className="hover:underline">Projets</span>
         </p>
       </div>

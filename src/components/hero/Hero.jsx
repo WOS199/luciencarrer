@@ -26,14 +26,14 @@ const Hero = () => {
     <>
       <div className="heroBack absolute top-0 left-0 w-screen h-screen">
         <div className="flex items-end w-full h-full px-10">
-          <a className="hoverElement font-secondary font-light italic text-[250px] text-dark-linen leading-none select-none">
+          <a className="hoverElement font-secondary font-light italic text-[200px] text-dark-linen leading-none select-none">
           Welcome
           </a>
         </div>
       </div>
       <div className="heroFront absolute top-0 left-0 w-screen h-screen hidden sm:block bg-cover bg-hero-pattern">
         <div className="flex items-end w-full h-full px-10">
-          <a className="hoverElement font-secondary font-light italic text-[250px] text-dark-linen leading-none select-none">
+          <a className="hoverElement font-secondary font-light italic text-[200px] text-dark-linen leading-none select-none">
           Welcome
           </a>
         </div>

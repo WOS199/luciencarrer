@@ -53,7 +53,7 @@
 
 .heroFront {
   --mask: radial-gradient(
-    circle 500px at var(--x, 70%) var(--y, 50%),
+    circle 300px at var(--x, 70%) var(--y, 50%),
     black 5%,
     transparent 100%
   );
@@ -61,10 +61,6 @@
 }
 
 /*----- CURSOR -----*/
-
-/* body {
-  cursor: url("/assets/cursor.svg") 15 15, auto;
-} */
 
 a:hover .cursor {
   transform: scale(2);

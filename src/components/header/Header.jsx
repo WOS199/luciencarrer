@@ -37,7 +37,7 @@ const Header = () => {
       }, 1000);
       setTransitionRules('transition-all')
     }
-  })
+  },[isOpen])
 
   let HandleOnClick = !isOpen ? toggleMenu : null;
 
