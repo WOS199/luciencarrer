@@ -8,26 +8,26 @@ const SectionChapter = ({ sectionLetter, sectionTitle, sectionImage }) => {
   };
 
   return (
-    <div className="section-chapter-container bg-alabaster flex flex-col justify-between h-screen w-full px-10">
-      <div className="pr-52">
+    <div className="section-chapter-container bg-alabaster flex flex-col px-10 pb-20">
+      <div className="pt-32 md:pt-0 md:pr-[20%]">
         <img
-          className="hoverElement max-h-[500px]"
+          className="hoverElement max-h-[60vh] mb-20"
           src={`assets/${sectionImage}`}
           alt=""
         />
       </div>
-      <div className="flex justify-between -translate-y-16">
+      <div className="flex justify-between">
         <div className="flex items-center">
-          <h2 className="font-secondary italic font-light text-7xl sm:text-9xl md:text-[150px] lg:text-[200px] text-dark-linen">
+          <h2 className="font-secondary italic font-light text-6xl sm:text-9xl md:text-[150px] lg:text-[200px] text-dark-linen">
             {sectionTitle}
           </h2>
           <img
-            className="mb-32 ml-5"
+            className="max-h-4 md:max-h-full mb-20 md:mb-32 md:ml-5"
             src={`/assets/sectionIcon_${sectionLetter}.svg`}
             alt={`Section ${sectionLetter} icon`}
           />
         </div>
-        <p className="self-center text-xs font-light text-dark-linen -rotate-90 mt-12">
+        <p className="self-center text-xs font-light text-dark-linen -rotate-90 md:mt-12">
           scroll
         </p>
       </div>

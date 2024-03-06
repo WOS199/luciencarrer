@@ -14,25 +14,25 @@ const Menu = () => {
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 ${onMount}`}>
-          <span className="hover:underline">Parcours</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Parcours</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
-          <span className="hover:underline">Expériences</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Expériences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
-          <span className="hover:underline">Compétences</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Compétences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
-          <span className="hover:underline">Projets</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Projets</span>
         </p>
       </div>
       {/* <div className="overflow-hidden absolute bottom-10 right-10">
