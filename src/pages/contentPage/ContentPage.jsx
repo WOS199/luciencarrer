@@ -2,8 +2,11 @@ import ButtonModule from "../../components/buttonModule/ButtonModule";
 import CustomCursor from "../../components/customCursor/CurstomCursor";
 import Header from "../../components/header/Header";
 import SectionChapter from "../../components/sectionChapter/SectionChapter";
+import Projects from "../../data/projects.json"
 
 const ContentPage = () => {
+  const projects = Projects;
+
   return (
     <>
       <div className="w-full h-full static md:sticky top-0 z-10">
@@ -295,7 +298,16 @@ const ContentPage = () => {
       </div>
       <div className="projects-gallery-container bg-alabaster px-10 md:pr-52 pb-32">
         <div className="grid grid-cols-2 gap-5">
-          <div className="col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10 bg-[url('/assets/full-img-3.jpg')] bg-cover bg-center">
+          {
+            Projects.map(({id, pics, title}, index) => (
+              <div key={index}
+              className={`col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10`}
+              style={{ backgroundImage: `url(${pics[0]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <ButtonModule projectId={id} projectName={title}/>
+              </div>
+            ))
+          }
+          {/* <div className="col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10 bg-[url('/assets/full-img-3.jpg')] bg-cover bg-center">
             <ButtonModule />
           </div>
           <div className="col-span-2 lg:col-span-1 w-full min-h-96 bg-slate-100 p-10 bg-[url('/assets/full-img-4.jpg')] bg-cover bg-center">
@@ -306,7 +318,7 @@ const ContentPage = () => {
           </div>
           <div className="col-span-2 lg:col-span-1 w-full min-h-96 bg-slate-100 p-10 bg-[url('/assets/full-img-4.jpg')] bg-cover bg-center">
             <ButtonModule />
-          </div>
+          </div> */}
         </div>
       </div>
       <CustomCursor />

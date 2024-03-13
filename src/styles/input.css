@@ -59,9 +59,3 @@
   );
   mask-image: var(--mask);
 }
-
-/*----- CURSOR -----*/
-
-a:hover .cursor {
-  transform: scale(2);
-}

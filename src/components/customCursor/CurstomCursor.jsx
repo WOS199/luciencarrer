@@ -33,7 +33,7 @@ const CustomCursor = () => {
   return (
     <>
       <div
-        className={`cursor ${customClasses} fixed top-0 left-0 border-[1px] rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-20 transition-all ease-out duration-300`}></div>
+        className={`cursor ${customClasses} fixed top-0 left-0 border-[1px] rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-20`}></div>
     </>
   );
 };
