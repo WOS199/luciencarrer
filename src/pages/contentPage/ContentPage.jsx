@@ -1,8 +1,9 @@
 import ButtonModule from "../../components/buttonModule/ButtonModule";
 import CustomCursor from "../../components/customCursor/CurstomCursor";
+import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import SectionChapter from "../../components/sectionChapter/SectionChapter";
-import Projects from "../../data/projects.json"
+import Projects from "../../data/projects.json";
 
 const ContentPage = () => {
   const projects = Projects;
@@ -17,28 +18,27 @@ const ContentPage = () => {
         sectionImage="full-img-1.jpg"
         sectionTitle="Parcours"></SectionChapter>
       <div className="section-content-container bg-alabaster pl-10 pr-10 md:pr-52">
-        <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
-          <p className="text-sm font-normal text-dark-linen leading-tight lg:pt-32 w-full">
-            Fasciné par l'univers du numérique et de la communication, mon
-            parcours professionnel s'est tracé entre Paris et Strasbourg. Après
-            une année dédiée à la préparation des concours nationaux des écoles
-            supérieures d'art et de design, j'ai choisi de m'orienter vers la
-            prestigieuse Haute école des arts du Rhin.
+        <div className="flex flex-col lg:flex-row justify-between gap-16 xl:gap-32">
+          <p className="text-xl text-balance font-normal text-dark-linen leading-tight lg:pt-10 w-full">
+            Après une année dédiée à la préparation des concours nationaux des
+            écoles supérieures d'art et de design, j'ai choisi de m'orienter
+            vers la prestigieuse <a href="https://www.hear.fr/" target="blank" className="underline hover:bg-racing-lime underline-offset-2">Haute École des Arts du Rhin</a>. Fort de
+            l'obtention de mon Master 2 avec les félicitations du jury, j'ai
+            rapidement intégré le secteur du web, mettant à profit mes
+            compétences en tant que freelance et au sein d'agences.
           </p>
-          <p className="text-sm font-extralight text-dark-linen leading-tight lg:pt-32 w-full">
-            Fort de l'obtention de mon Master 2 avec les félicitations du jury,
-            j'ai rapidement intégré le secteur du web, mettant à profit mes
-            compétences en tant que freelance et au sein d'agences. Animé par un
-            désir constant d'élargir mes connaissances, j'ai récemment décroché
-            en 2024 une certification professionnelle en développement React et
-            Javascript, attestant de mon engagement continu dans l'excellence
-            technique. Mon expertise en tant que développeur front-end et web
-            designer s'inscrit ainsi dans une démarche résolument tournée vers
-            l'innovation et la maîtrise des dernières technologies.
+          <p className="text-base font-extralight text-dark-linen leading-tight lg:pt-32 w-full">
+            Animé par un désir constant d'élargir mes connaissances, j'ai
+            récemment décroché en 2024 une certification professionnelle en
+            développement React et Javascript, attestant de mon engagement
+            continu dans l'excellence technique. Mon expertise en tant que
+            développeur front-end et web designer s'inscrit ainsi dans une
+            démarche résolument tournée vers l'innovation et la maîtrise des
+            dernières technologies.
           </p>
           <div className="flex min-w-60 pt-20 lg:pt-0 justify-end">
             <p className="font-secondary font-extralight text-4xl text-dark-linen italic max-w-96">
-              Wnim ad minim veniam, quis nostrud exercitation ullamco laboris
+              Mon parcours professionnel s'est tracé entre Paris et Strasbourg
             </p>
           </div>
         </div>
@@ -119,11 +119,11 @@ const ContentPage = () => {
             </div>
           </div>
           <div className="col-span-2 lg:col-span-1 mt-10 md:mt-0">
-            <p className="text-xs font-normal text-dark-linen pb-5">
+            <p className="text-sm font-normal text-dark-linen pb-5">
               Directeur Artistique Digital <br />
               Direction du pôle web
             </p>
-            <p className="text-xs font-extralight text-dark-linen max-w-[70%]">
+            <p className="text-sm font-extralight text-dark-linen max-w-[70%]">
               À la tête d’une équipe de 10 personnes composée de développeur
               (Full Stack & Front-End) ainsi que de web-designers, j’ai dirigé
               la production web de l’agence à destination de notre parc client
@@ -163,11 +163,11 @@ const ContentPage = () => {
             </div>
           </div>
           <div className="col-span-2 lg:col-span-1 mt-10 md:mt-0">
-            <p className="text-xs font-normal text-dark-linen pb-5">
+            <p className="text-sm font-normal text-dark-linen pb-5">
               WebDesign <br />
               Développement
             </p>
-            <p className="text-xs font-extralight text-dark-linen max-w-[70%]">
+            <p className="text-sm font-extralight text-dark-linen max-w-[70%]">
               Mon expérience en tant que freelancer m'a conduit à collaborer
               avec diverses agences de communication et des studios de
               développement de renom. Je suis notamment intervenu sur les
@@ -205,7 +205,7 @@ const ContentPage = () => {
       <div className="section-content-container bg-alabaster px-10 md:pr-52">
         <div className="flex flex-col lg:flex-row justify-between gap-20">
           <div className="w-1/2">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extralight text-dark-linen mb-5">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen">
               Savoir faire
             </h3>
             <p className="text-xs md:text-sm xl:text-base font-extralight text-dark-linen w-full">
@@ -218,7 +218,7 @@ const ContentPage = () => {
             </p>
           </div>
           <div className="w-1/2">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extralight text-dark-linen mb-5">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen">
               Savoir être
             </h3>
             <p className="text-xs md:text-sm xl:text-base font-extralight text-dark-linen w-full">
@@ -298,15 +298,18 @@ const ContentPage = () => {
       </div>
       <div className="projects-gallery-container bg-alabaster px-10 md:pr-52 pb-32">
         <div className="grid grid-cols-2 gap-5">
-          {
-            Projects.map(({id, pics, title}, index) => (
-              <div key={index}
+          {Projects.map(({ id, pics, title }, index) => (
+            <div
+              key={index}
               className={`col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10`}
-              style={{ backgroundImage: `url(${pics[0]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <ButtonModule projectId={id} projectName={title}/>
-              </div>
-            ))
-          }
+              style={{
+                backgroundImage: `url(${pics[0]})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}>
+              <ButtonModule projectId={id} projectName={title} />
+            </div>
+          ))}
           {/* <div className="col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10 bg-[url('/assets/full-img-3.jpg')] bg-cover bg-center">
             <ButtonModule />
           </div>
@@ -321,7 +324,7 @@ const ContentPage = () => {
           </div> */}
         </div>
       </div>
-      <CustomCursor />
+      <Footer />
     </>
   );
 };

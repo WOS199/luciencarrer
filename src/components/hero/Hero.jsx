@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="heroBack absolute top-0 left-0 w-screen h-screen">
+      <div className="heroBack absolute inset-0 w-screen h-screen">
         <div className="flex flex-col justify-between w-full h-full px-10 pt-10">
           <p className="font-secondary font-light italic text-7xl text-dark-linen leading-none select-none">
             Lucien Carrer
@@ -36,7 +36,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="heroFront absolute top-0 left-0 w-screen h-screen hidden sm:block bg-cover bg-hero-pattern">
+      <div className="heroFront absolute inset-0 w-screen h-screen hidden sm:block bg-cover bg-center bg-hero-pattern">
         <div className="flex flex-col justify-between w-full h-full px-10 pt-10">
           <p className="font-secondary font-light italic text-7xl text-dark-linen leading-none select-none">
             Lucien Carrer
@@ -48,6 +48,9 @@ const Hero = () => {
             Welcome
           </a>
         </div>
+      </div>
+      <div className="absolute inset-0">
+        <a className="cursor-pointer block w-screen h-screen" href="/content"></a>
       </div>
       <CustomCursor />
     </>

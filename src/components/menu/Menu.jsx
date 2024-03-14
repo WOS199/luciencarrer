@@ -14,25 +14,37 @@ const Menu = () => {
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Parcours</span>
+          <a href="/" className="hover:underline decoration-4 underline-offset-8">Accueil</a>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Expériences</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Parcours</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Compétences</span>
+          <span className="hover:underline decoration-4 underline-offset-8">Expériences</span>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
+          <span className="hover:underline decoration-4 underline-offset-8">Compétences</span>
+        </p>
+      </div>
+      <div className="overflow-hidden">
+        <p
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-500 ${onMount}`}>
           <span className="hover:underline decoration-4 underline-offset-8">Projets</span>
+        </p>
+      </div>
+      <div className="overflow-hidden">
+        <p
+          className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-700 ${onMount}`}>
+          <span className="hover:underline decoration-4 underline-offset-8">Contact</span>
         </p>
       </div>
       {/* <div className="overflow-hidden absolute bottom-10 right-10">
