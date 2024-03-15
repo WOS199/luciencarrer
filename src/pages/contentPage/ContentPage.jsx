@@ -1,9 +1,9 @@
-import ButtonModule from "../../components/buttonModule/ButtonModule";
-import CustomCursor from "../../components/customCursor/CurstomCursor";
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-import SectionChapter from "../../components/sectionChapter/SectionChapter";
-import Projects from "../../data/projects.json";
+import ButtonModule from "/src/components/buttonModule/ButtonModule";
+import CustomCursor from "/src/components/customCursor/CurstomCursor";
+import Footer from "/src/components/footer/Footer";
+import Header from "/src/components/header/Header";
+import SectionChapter from "/src/components/sectionChapter/SectionChapter";
+import Projects from "/src/data/projects.json";
 
 const ContentPage = () => {
   const projects = Projects;

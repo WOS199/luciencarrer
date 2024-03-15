@@ -1,6 +1,6 @@
-import Header from "../../components/header/Header";
+import Header from "/src/components/header/Header";
 import { useParams } from "react-router-dom";
-import Projects from "../../data/projects.json";
+import Projects from "/src/data/projects.json";
 
 const Project = () => {
   const params = useParams();

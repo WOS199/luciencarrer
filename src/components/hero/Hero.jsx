@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CustomCursor from "../customCursor/CurstomCursor";
+import CustomCursor from "/src/components/customCursor/CurstomCursor";
 
 const Hero = () => {
   useEffect(() => {
