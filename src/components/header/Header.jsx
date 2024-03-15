@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Menu from "/src/components/menu/Menu";
-import FadeInMount from "/src/components/FadeInMount/FadeInMount";
+import FadeInMount from "/src/components/fadeInMount/FadeInMount";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
