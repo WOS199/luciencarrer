@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/home/Home'
+import Home from '/src/pages/home/Home'
 import "/src/styles/output.css"
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
-import ContentPage from './pages/contentPage/ContentPage'
-import Project from './pages/project/Project'
+import ContentPage from '/src/pages/contentPage/ContentPage'
+import Project from '/src/pages/project/Project'
 
 const route = createBrowserRouter([
   {
