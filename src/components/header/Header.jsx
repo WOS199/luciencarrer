@@ -1,55 +1,52 @@
-import logo from "../../assets/135x15_logotype_green.webp";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Menu from "../menu/Menu";
 import FadeInMount from "../FadeInMount/FadeInMount";
 
-function Header() {
-  const menuRef = useRef();
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpening, setIsOpening] = useState(false);
+  const menuIcon = <img src="/assets/menuIcon.svg" alt="Open menu" />;
+  const menuClose = <img src="/assets/menuClose.svg" alt="Close menu" />;
+
+  const closeMenu = () => {
+    setIsOpening(false);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 100);
+  };
+
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    if (!isOpen) {
+      setIsOpen(true);
+      setIsOpening(true);
+    }
+    if (isOpen) {
+      closeMenu();
+    }
   };
 
   let HandleOnClick = !isOpen ? toggleMenu : null;
 
-  // Closing the musing by clicking outside //
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handler);
-
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, [setIsOpen]);
-
   return (
-    <div
-      className="bg-alabaster flex justify-between items-center h-32">
-      <div className="logotype mx-10">
-        <a href="">
-          <img src={logo} alt="Lucien Carrer" />
-        </a>
+    <>
+      <div className="bg-alabaster flex items-center h-16">
+        <div
+          onClick={HandleOnClick}
+          className={`menuContainer z-20 bg-racing-lime absolute top-0 right-0 duration-700 px-10 transition-all ${
+            isOpen ? "w-screen h-screen" : `w-32 h-32 cursor-pointer`
+          }`}>
+          <p
+            onClick={toggleMenu}
+            className="font-sans font-light text-xs absolute top-14 right-[52px] text-dark-linen cursor-pointer">
+            {isOpen ? menuClose : menuIcon}
+          </p>
+          <FadeInMount isOpen={isOpen} isOpening={isOpening}>
+            <Menu closeMenu={closeMenu} />
+          </FadeInMount>
+        </div>
       </div>
-      <div
-        ref={menuRef}
-        onClick={HandleOnClick}
-        className={`menuContainer z-10 bg-racing-lime flex items-end absolute top-0 right-0 transition-all duration-700 p-10 ${
-          isOpen ? "w-full h-3/4" : "w-32 h-32 cursor-pointer"
-        }`}>
-        <p onClick={toggleMenu} className="cursor-pointer font-sans absolute top-[52px] right-10 text-dark-linen">
-          {isOpen ? "close" : "menu"}
-        </p>
-        <FadeInMount isOpen={isOpen}>
-          <Menu />
-        </FadeInMount>
-      </div>
-    </div>
+    </>
   );
-}
+};
 
 export default Header;

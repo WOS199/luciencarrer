@@ -1,12 +1,19 @@
 import { useEffect, useState } from "react"
+import PropTypes from "prop-types";
 
-function FadeInMount ({isOpen, children}) {
+function FadeInMount ({isOpen, isOpening, children}) {
     const [showChildren, setShowChildren] = useState(isOpen)
     const [isMounting, setIsMounting] = useState(isOpen)
+
+    FadeInMount.propTypes = {
+        isOpen: PropTypes.bool.isRequired,
+        isOpening: PropTypes.bool.isRequired,
+        children: PropTypes.node.isRequired,
+    };
     
 
     useEffect(() => {
-        if(isOpen) {
+        if(isOpening) {
             setTimeout(() => {
                 setIsMounting(true)
                 setShowChildren(true)
@@ -15,9 +22,9 @@ function FadeInMount ({isOpen, children}) {
             setIsMounting(false)
             setTimeout(() => {
                 setShowChildren(false)
-            }, 300)
+            }, 100)
         }
-    }, [isOpen])
+    }, [isOpening])
 
     let classNames = `${isMounting ? 'animate-FadeIn' : 'animate-FadeOut'}`
 

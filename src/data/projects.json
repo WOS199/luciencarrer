@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "title": "Ozu",
+    "techs": ["Laravel Blade", "Tailwindcss", "Alpine.js"],
+    "role": "UI / UX design et développement",
+    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "githubLink": "#",
+    "pics": [
+        "/assets/full-img-3.jpg",
+        "/assets/full-img-2.jpg",
+        "/assets/full-img-3.jpg",
+        "/assets/full-img-2.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Démostratif",
+    "techs": ["Laravel Blade", "Tailwindcss", "Alpine.js"],
+    "role": "UI / UX design et développement",
+    "description": "Imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "githubLink": "#",
+    "pics": [
+        "/assets/full-img-4.jpg",
+        "/assets/full-img-1.jpg",
+        "/assets/full-img-4.jpg",
+        "/assets/full-img-1.jpg"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "[POC] Kasa",
+    "techs": ["React"],
+    "role": "Développement",
+    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "githubLink": "#",
+    "pics": [
+        "/assets/full-img-2.jpg",
+        "/assets/full-img-3.jpg",
+        "/assets/full-img-2.jpg",
+        "/assets/full-img-3.jpg"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "[POC] Argent Bank",
+    "techs": ["React"],
+    "role": "Développement",
+    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "githubLink": "#",
+    "pics": [
+        "/assets/full-img-2.jpg",
+        "/assets/full-img-3.jpg",
+        "/assets/full-img-2.jpg",
+        "/assets/full-img-3.jpg"
+    ]
+  }
+]

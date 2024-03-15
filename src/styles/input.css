@@ -12,7 +12,50 @@
   }
   @font-face {
     font-family: Geist;
+    font-weight: 200;
+    src: url(../src/fonts/Geist/Geist-UltraLight.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Geist;
     font-weight: 600;
     src: url(../src/fonts/Geist/Geist-Bold.woff2) format("woff2");
   }
+  @font-face {
+    font-family: HolandCentury;
+    font-weight: 500;
+    font-style: italic;
+    src: url(../src/fonts/HolandCentury/HolandCentury-MediumOblique.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: HolandCentury;
+    font-weight: 400;
+    font-style: italic;
+    src: url(../src/fonts/HolandCentury/HolandCentury-Oblique.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: HolandCentury;
+    font-weight: 700;
+    src: url(../src/fonts/HolandCentury/HolandCentury-Black.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: HolandCentury;
+    font-weight: 300;
+    font-style: italic;
+    src: url(../src/fonts/HolandCentury/HolandCentury-LightOblique.woff2)
+      format("woff2");
+  }
+}
+
+/*----- HERO SPOTLIGHT EFFECT -----*/
+
+.heroFront {
+  --mask: radial-gradient(
+    circle 300px at var(--x, 70%) var(--y, 50%),
+    black 5%,
+    transparent 100%
+  );
+  mask-image: var(--mask);
 }
