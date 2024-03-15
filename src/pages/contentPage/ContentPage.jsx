@@ -98,14 +98,11 @@ const ContentPage = () => {
             </div>
           </div>
         </div>
-        {/* <div className="py-32">
-          <img className="hoverElement" src="assets/full-img-1.jpg" alt="" />
-        </div> */}
       </div>
       <SectionChapter
         sectionLetter="B"
         sectionImage="full-img-1.jpg"
-        sectionTitle="Expérience"></SectionChapter>
+        sectionTitle="Experience"></SectionChapter>
       <div className="experience-component bg-alabaster pl-10 pr-10 lg:pr-52">
         <div className="grid grid-cols-2 pb-20">
           <div className="col-span-2 lg:col-span-1">
@@ -133,22 +130,6 @@ const ContentPage = () => {
             </p>
           </div>
         </div>
-        {/* <div className="grid gap-8 grid-cols-3 items-start pb-32">
-          <div className="col-span-1 bg-slate-200">
-            <img
-              className="hoverElement h-full object-contain"
-              src="/assets/agence-1.jpg"
-              alt=""
-            />
-          </div>
-          <div className="col-span-2 bg-slate-400">
-            <img
-              className="hoverElement h-full object-contain"
-              src="/assets/agence-2.jpg"
-              alt=""
-            />
-          </div>
-        </div> */}
       </div>
       <div className="experience-component bg-alabaster pl-10 pr-10 lg:pr-52 md:pb-32">
         <div className="grid grid-cols-2 pb-20">
@@ -310,18 +291,6 @@ const ContentPage = () => {
               <ButtonModule projectId={id} projectName={title} />
             </div>
           ))}
-          {/* <div className="col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10 bg-[url('/assets/full-img-3.jpg')] bg-cover bg-center">
-            <ButtonModule />
-          </div>
-          <div className="col-span-2 lg:col-span-1 w-full min-h-96 bg-slate-100 p-10 bg-[url('/assets/full-img-4.jpg')] bg-cover bg-center">
-            <ButtonModule />
-          </div>
-          <div className="col-span-2 lg:col-span-1 w-full min-h-[500px] bg-slate-100 p-10 bg-[url('/assets/full-img-3.jpg')] bg-cover bg-center">
-            <ButtonModule />
-          </div>
-          <div className="col-span-2 lg:col-span-1 w-full min-h-96 bg-slate-100 p-10 bg-[url('/assets/full-img-4.jpg')] bg-cover bg-center">
-            <ButtonModule />
-          </div> */}
         </div>
       </div>
       <Footer />

@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 
-const Menu = () => {
+const Menu = ({closeMenu}) => {
   const [onMount, setOnMount] = useState("translate-y-full");
+
+  const handleLinkClick = () => {
+    closeMenu();
+  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,39 +24,33 @@ const Menu = () => {
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-100 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Parcours</span>
+          <a className="hover:underline decoration-4 underline-offset-8" href="#Parcours" onClick={handleLinkClick}>Parcours</a>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-200 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Expériences</span>
+          <a className="hover:underline decoration-4 underline-offset-8" href="#Experience" onClick={handleLinkClick}>Expériences</a>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-300 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Compétences</span>
+          <a className="hover:underline decoration-4 underline-offset-8" href="#Skills" onClick={handleLinkClick}>Skills</a>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-500 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Projets</span>
+          <a className="hover:underline decoration-4 underline-offset-8" href="#Projects" onClick={handleLinkClick}>Projets</a>
         </p>
       </div>
       <div className="overflow-hidden">
         <p
           className={`font-light text-4xl md:text-6xl xl:text-8xl w-fit text-dark-linen mt-4 transition-all duration-500 delay-700 ${onMount}`}>
-          <span className="hover:underline decoration-4 underline-offset-8">Contact</span>
+          <a className="hover:underline decoration-4 underline-offset-8" href="#Footer" onClick={handleLinkClick}>Contact</a>
         </p>
       </div>
-      {/* <div className="overflow-hidden absolute bottom-10 right-10">
-        <p
-          className={`font-secondary italic font-medium text-4xl text-dark-linen mt-4 transition-all duration-500 delay-500 ${onMount}`}>
-          Contact
-        </p>
-      </div> */}
     </div>
   );
 }

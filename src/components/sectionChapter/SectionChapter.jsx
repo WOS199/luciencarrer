@@ -8,11 +8,11 @@ const SectionChapter = ({ sectionLetter, sectionTitle, sectionImage }) => {
   };
 
   return (
-    <div className="section-chapter-container bg-alabaster flex flex-col px-10 pb-20">
+    <div className="section-chapter-container bg-alabaster flex flex-col px-10 pb-20" id={sectionTitle}>
       <div className="pt-32 md:pt-0 md:pr-[20%]">
         <img
           className="hoverElement max-h-[60vh] mb-20"
-          src={`assets/${sectionImage}`}
+          src={`/assets/${sectionImage}`}
           alt=""
         />
       </div>
