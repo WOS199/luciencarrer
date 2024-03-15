@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './pages/home/Home'
-import "../dist/output.css"
+import "/dist/output.css"
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import ContentPage from './pages/contentPage/ContentPage'
 import Project from './pages/project/Project'
