@@ -12,11 +12,11 @@ const route = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "content",
+    path: "/content",
     element: <ContentPage />
   },
   {
-    path: "project/:id",
+    path: "/project/:id",
     element: <Project />
   },
 ])
