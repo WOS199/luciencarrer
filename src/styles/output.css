@@ -449,7 +449,7 @@ video {
 
   font-weight: 400;
 
-  src: url(../src/fonts/Geist/Geist-Regular.woff2) format("woff2");
+  src: url(./fonts/Geist/Geist-Regular.woff2) format("woff2");
 }
 
 @font-face {
@@ -457,7 +457,7 @@ video {
 
   font-weight: 200;
 
-  src: url(../src/fonts/Geist/Geist-UltraLight.woff2) format("woff2");
+  src: url(./fonts/Geist/Geist-UltraLight.woff2) format("woff2");
 }
 
 @font-face {
@@ -465,7 +465,7 @@ video {
 
   font-weight: 600;
 
-  src: url(../src/fonts/Geist/Geist-Bold.woff2) format("woff2");
+  src: url(./fonts/Geist/Geist-Bold.woff2) format("woff2");
 }
 
 @font-face {
@@ -475,7 +475,7 @@ video {
 
   font-style: italic;
 
-  src: url(../src/fonts/HolandCentury/HolandCentury-MediumOblique.woff2)
+  src: url(./fonts/HolandCentury/HolandCentury-MediumOblique.woff2)
       format("woff2");
 }
 
@@ -486,7 +486,7 @@ video {
 
   font-style: italic;
 
-  src: url(../src/fonts/HolandCentury/HolandCentury-Oblique.woff2)
+  src: url(./fonts/HolandCentury/HolandCentury-Oblique.woff2)
       format("woff2");
 }
 
@@ -495,7 +495,7 @@ video {
 
   font-weight: 700;
 
-  src: url(../src/fonts/HolandCentury/HolandCentury-Black.woff2)
+  src: url(./fonts/HolandCentury/HolandCentury-Black.woff2)
       format("woff2");
 }
 
@@ -506,7 +506,7 @@ video {
 
   font-style: italic;
 
-  src: url(../src/fonts/HolandCentury/HolandCentury-LightOblique.woff2)
+  src: url(./fonts/HolandCentury/HolandCentury-LightOblique.woff2)
       format("woff2");
 }
 
