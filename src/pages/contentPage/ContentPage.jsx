@@ -1,25 +1,24 @@
+import ClosedMenu from "../../components/menu/ClosedMenu";
 import ButtonModule from "/src/components/buttonModule/ButtonModule";
-import CustomCursor from "/src/components/customCursor/CurstomCursor";
 import Footer from "/src/components/footer/Footer";
-import Header from "/src/components/header/Header";
 import SectionChapter from "/src/components/sectionChapter/SectionChapter";
 import Projects from "/src/data/projects.json";
+import { useInView } from "react-intersection-observer";
 
 const ContentPage = () => {
-  const projects = Projects;
+  const {ref: ref1, inView: ref1InView} = useInView({ threshold: 0.5 });
+  const {ref: ref2, inView: ref2InView} = useInView({ threshold: 0.5 });
 
   return (
     <>
-      <div className="w-full h-full static md:sticky top-0 z-10">
-        <Header />
-      </div>
+      <ClosedMenu />
       <SectionChapter
         sectionLetter="A"
         sectionImage="full-img-1.jpg"
         sectionTitle="Parcours"></SectionChapter>
       <div className="section-content-container bg-alabaster pl-10 pr-10 md:pr-52">
-        <div className="flex flex-col lg:flex-row justify-between gap-16 xl:gap-32">
-          <p className="text-xl text-balance font-normal text-dark-linen leading-tight lg:pt-10 w-full">
+        <div ref={ref1} className="flex flex-col lg:flex-row justify-between gap-16 xl:gap-32">
+          <p className={`text-xl text-balance font-normal text-dark-linen leading-tight lg:pt-10 w-full transition-all duration-1000 ${ref1InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
             Après une année dédiée à la préparation des concours nationaux des
             écoles supérieures d'art et de design, j'ai choisi de m'orienter
             vers la prestigieuse <a href="https://www.hear.fr/" target="blank" className="underline hover:bg-racing-lime underline-offset-2">Haute École des Arts du Rhin</a>. Fort de
@@ -27,7 +26,7 @@ const ContentPage = () => {
             rapidement intégré le secteur du web, mettant à profit mes
             compétences en tant que freelance et au sein d'agences.
           </p>
-          <p className="text-base font-extralight text-dark-linen leading-tight lg:pt-32 w-full">
+          <p className={`text-base font-extralight text-dark-linen leading-tight lg:pt-32 w-full transition-all duration-1000 delay-200 ${ref1InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
             Animé par un désir constant d'élargir mes connaissances, j'ai
             récemment décroché en 2024 une certification professionnelle en
             développement React et Javascript, attestant de mon engagement
@@ -36,14 +35,14 @@ const ContentPage = () => {
             démarche résolument tournée vers l'innovation et la maîtrise des
             dernières technologies.
           </p>
-          <div className="flex min-w-60 pt-20 lg:pt-0 justify-end">
+          <div className={`flex min-w-60 pt-20 lg:pt-0 justify-end transition-all duration-1000 delay-300 ${ref1InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
             <p className="font-secondary font-extralight text-4xl text-dark-linen italic max-w-96">
               Mon parcours professionnel s'est tracé entre Paris et Strasbourg
             </p>
           </div>
         </div>
-        <div className="study-presentation flex flex-col pt-20 md:py-32">
-          <div className="line1 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen">
+        <div ref={ref2} className="study-presentation flex flex-col mt-20 pb-32">
+          <div className={`line1 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen opacity-0 transition-all duration-1000 ${ref2InView ? 'opacity-100 -translate-y-5' : ''}`}>
             <div className="block1 md:w-[45%] flex justify-between items-end hover:bg-racing-lime">
               <p className="text-xl lg:text-4xl translate-y-1 font-normal md:font-extralight text-dark-linen">
                 Paris
@@ -61,7 +60,7 @@ const ContentPage = () => {
               </p>
             </div>
           </div>
-          <div className="line2 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen">
+          <div className={`line2 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen opacity-0 transition-all duration-1000 delay-200 ${ref2InView ? 'opacity-100 -translate-y-5' : ''}`}>
             <div className="block1 md:w-[45%] flex justify-between items-end hover:bg-racing-lime">
               <p className="text-xl lg:text-4xl translate-y-1 font-normal md:font-extralight text-dark-linen">
                 Strasbourg
@@ -79,7 +78,7 @@ const ContentPage = () => {
               </p>
             </div>
           </div>
-          <div className="line3 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen">
+          <div className={`line3 flex flex-col md:flex-row md:gap-10 justify-between border-b-[1px] pt-4 pb-3 border-dark-linen opacity-0 transition-all duration-1000 delay-300 ${ref2InView ? 'opacity-100 -translate-y-5' : ''}`}>
             <div className="block1 md:w-[45%] flex justify-between items-end hover:bg-racing-lime">
               <p className="text-xl lg:text-4xl translate-y-1 font-normal md:font-extralight text-dark-linen">
                 Online

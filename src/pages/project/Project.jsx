@@ -1,6 +1,6 @@
-import Header from "/src/components/header/Header";
 import { useParams } from "react-router-dom";
 import Projects from "/src/data/projects.json";
+import ClosedMenu from "../../components/menu/ClosedMenu";
 
 const Project = () => {
   const params = useParams();
@@ -10,9 +10,7 @@ const Project = () => {
 
   return (
     <>
-      <div className="w-full h-full static md:sticky top-0 z-10">
-        <Header />
-      </div>
+      <ClosedMenu />
       <div className="project-content-container bg-alabaster pl-10 pr-10 md:pr-40 flex flex-col md:flex-row">
         <div className="img-col flex flex-col gap-10 order-2 md:order-1">
           {pics.map((pic, index) => (
