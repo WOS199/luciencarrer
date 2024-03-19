@@ -1,11 +1,7 @@
-import PropTypes from "prop-types";
+
 
 const SectionChapter = ({ sectionLetter, sectionTitle, sectionImage }) => {
-  SectionChapter.propTypes = {
-    sectionLetter: PropTypes.string.isRequired,
-    sectionImage: PropTypes.string.isRequired,
-    sectionTitle: PropTypes.string.isRequired,
-  };
+
 
   return (
     <div className="section-chapter-container bg-alabaster flex flex-col px-10 pb-20" id={sectionTitle}>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion"
 import FullScreenMenu from "../../components/menu/FullScreenMenu";
 
 const ClosedMenu = () => {
@@ -29,13 +28,7 @@ const ClosedMenu = () => {
           {menuIcon}
         </a>
       </div>
-    <AnimatePresence>
-      {isOpen && <motion.div className="h-screen w-screen absolute z-20 inset-0 transition-all ease-linear duration-75"
-      initial={{ opacity: 0, scale: .99 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: .99 }}><FullScreenMenu closeMenu={closeMenu} /></motion.div> }
-      </AnimatePresence>
-
+      {isOpen && <FullScreenMenu closeMenu={closeMenu} />}
     </>
   );
 };

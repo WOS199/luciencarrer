@@ -1,70 +1,69 @@
 import { HashLink } from "react-router-hash-link";
+import { useEffect, useState } from "react";
 
 const FullScreenMenu = ({ closeMenu }) => {
   const menuClose = <img src="/assets/menuClose.svg" alt="Close menu" />;
   const handleCloseMenu = () => {
     closeMenu();
   };
+  const [customTranslate, setCustomTranslate] = useState('translate-y-full');
+  useEffect(() => {
+    setCustomTranslate('translate-y-0');
+  },[]);
   return (
     <>
-      <div className="h-screen w-screen absolute inset-0 z-20 p-10 bg-racing-lime flex justify-between"
+      <div className="h-screen w-full absolute inset-0 z-20 p-10 bg-racing-lime flex justify-between"
       >
-        <div>
+        <div className="w-full">
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <a
                 href="/"
-                className="hover:underline decoration-4 underline-offset-8"
                 onClick={closeMenu}>
                 Accueil
               </a>
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 delay-100 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Parcours"
-                className="hover:underline hover:decoration-2 hover:underline-offset-2"
                 onClick={closeMenu}>
                 Parcours
               </HashLink>
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 delay-150 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Experience"
-                className="hover:underline hover:decoration-2 hover:underline-offset-2"
                 onClick={closeMenu}>
                 Expériences
               </HashLink>
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 delay-200 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Skills"
-                className="hover:underline hover:decoration-2 hover:underline-offset-2"
                 onClick={closeMenu}>
                 Skills
               </HashLink>
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 delay-[250ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Projects"
-                className="hover:underline hover:decoration-2 hover:underline-offset-2"
                 onClick={closeMenu}>
                 Projects
               </HashLink>
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className="font-light text-4xl md:text-6xl w-fit text-dark-linen mt-4">
+            <p className={`${customTranslate} transition-all duration-300 delay-[300ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Footer"
-                className="hover:underline hover:decoration-2 hover:underline-offset-2"
                 onClick={closeMenu}>
                 Contact
               </HashLink>
