@@ -287,8 +287,7 @@ const ContentPage = () => {
               className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-500 text-dark-linen py-5 max-w-[80%] ${
                 ref6InView ? "opacity-100" : "opacity-0"
               }`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
+              Spécialisé en technologies Front-End, je développe mes connaissances de manière continue. Je me passionne en particulier pour les frameworks Javascript et les évolutions récentes du langage CSS.
             </p>
             <ul
               className={`font-light transition-all duration-1000 delay-500 ${
@@ -318,8 +317,7 @@ const ContentPage = () => {
               className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-700 text-dark-linen py-5 max-w-[80%] ${
                 ref6InView ? "opacity-100" : "opacity-0"
               }`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
+              Designer graphique et digital depuis plus de 7 ans, ma pratique est complémentaire à mes aptitudes en développement. Je considère que ces deux facettes de mon métier consituent une grande valaure ajoutée.
             </p>
             <ul
               className={`font-light transition-all duration-1000 delay-700 ${
