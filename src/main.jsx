@@ -5,11 +5,13 @@ import "/src/styles/output.css"
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 import ContentPage from '/src/pages/contentPage/ContentPage'
 import Project from '/src/pages/project/Project'
+import Error from './pages/error/Error'
 
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
+    errorElement: <Error />
   },
   {
     path: "/content",

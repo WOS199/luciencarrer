@@ -1,12 +1,20 @@
 import { useParams } from "react-router-dom";
 import Projects from "/src/data/projects.json";
 import ClosedMenu from "../../components/menu/ClosedMenu";
+import Error from "../error/Error";
 
 const Project = () => {
   const params = useParams();
   const selectedProject = Projects.find((item) => item.id === params.id);
 
-  const { title, techs, role, description, githubLink, pics } = selectedProject;
+  if(!selectedProject){
+    return (
+      <Error />
+    )
+  }
+
+  const { title, techs, role, description, githubLink, liveLink, pics } =
+    selectedProject;
 
   return (
     <>
@@ -25,18 +33,35 @@ const Project = () => {
             </h3>
             <div className="mt-5">
               {techs.map((tech, index) => (
-                <a key={`tech-${index}`} className="pb-1 hover:underline font-light block">{tech} ↘</a>
+                <a
+                  key={`tech-${index}`}
+                  className="pb-1 hover:underline font-light block">
+                  {tech} ↘
+                </a>
               ))}
             </div>
             <div className="font-bold text-sm mt-5">{role}</div>
             <div className="font-light text-sm mt-5">{description}</div>
-            <div className="mt-5">
-              <a
-                className="hover:bg-racing-lime bg-dark-linen text-alabaster px-4 py-2 rounded-full text-sm hover:text-dark-linen"
-                href={githubLink} target="_blank">
-                Github
-              </a>
-            </div>
+            {githubLink && (
+              <div className="mt-5">
+                <a
+                  className="hover:bg-racing-lime bg-dark-linen text-alabaster px-4 py-2 rounded-full text-sm hover:text-dark-linen"
+                  href={githubLink}
+                  target="_blank">
+                  Github
+                </a>
+              </div>
+            )}
+            {liveLink && (
+              <div className="mt-5">
+                <a
+                  className="hover:bg-racing-lime bg-dark-linen text-alabaster px-4 py-2 rounded-full text-sm hover:text-dark-linen"
+                  href={liveLink}
+                  target="_blank">
+                  Visiter
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
