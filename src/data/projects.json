@@ -1,16 +1,16 @@
 [
   {
     "id": "1",
-    "title": "Ozu",
+    "title": "Landing Ozu",
     "techs": ["Laravel Blade", "Tailwindcss", "Alpine.js"],
     "role": "UI / UX design et développement",
-    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "description": "Ozu est un solution à destination des dévelopeurs évoluants dans l'environnement Laravel, destinée à simplifier tout le cycle de vie de sites statiques en leur apportant une touche dynamique. Elle allie simplicité et légèreté, et propose également un système de gestion de contenus intégré. La landing page accompagne le lancement progressif du projet en phase beta. Propulsé par Laravel Blade, le front-end est réalisé avec Tailwindcss et Alpine.JS.",
     "githubLink": "#",
     "pics": [
         "/assets/full-img-3.jpg",
-        "/assets/full-img-2.jpg",
-        "/assets/full-img-3.jpg",
-        "/assets/full-img-2.jpg"
+        "/assets/Ozu2.jpg",
+        "/assets/Ozu3.jpg",
+        "/assets/Ozu4.jpg"
     ]
   },
   {
@@ -18,10 +18,10 @@
     "title": "Démostratif",
     "techs": ["Laravel Blade", "Tailwindcss", "Alpine.js"],
     "role": "UI / UX design et développement",
-    "description": "Imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
+    "description": "Démostratif est un festival culturel de spectacle vivant mettant en exergue la jeune création et les artistes emmergeants. Accueillant plus de 6000 spectateurs et spectatrices sur une semaine, le festival se dote d'un site contemporain pour assurer la continuité de ses canaux de communication en ligne, et informer efficacement son public. Le back-end s'appuie sur un système de gestion de contenus maison développé sous Laravel, le front-end est réalisé avec Laravel Blade, Tailwindcss et Alpine.JS.",
     "githubLink": "#",
     "pics": [
-        "/assets/full-img-4.jpg",
+        "/assets/demostratif-imac2-h.jpg",
         "/assets/full-img-1.jpg",
         "/assets/full-img-4.jpg",
         "/assets/full-img-1.jpg"
@@ -32,13 +32,12 @@
     "title": "[POC] Kasa",
     "techs": ["React"],
     "role": "Développement",
-    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
-    "githubLink": "#",
+    "description": "Kasa est un projet réalisé dans un contexte de formation. Il émule en conditions réelles le fonctionnement d'une application de réservation de biens immobiliers. Le projet met notamment en place une gestion dynamique des contenus, avec des fontionnalités associées, comme le filtrage d'items. Réalisé avec React et React Router, il s'agît d'un projet archetypique de l'utilisation de ces technologies.",
+    "githubLink": "https://github.com/WOS199/PR8-Repo",
     "pics": [
-        "/assets/full-img-2.jpg",
-        "/assets/full-img-3.jpg",
-        "/assets/full-img-2.jpg",
-        "/assets/full-img-3.jpg"
+        "/assets/OC-Kasa.jpg",
+        "/assets/OC-Kasa2.jpg",
+        "/assets/OC-Kasa3.jpg"
     ]
   },
   {
@@ -46,10 +45,10 @@
     "title": "[POC] Argent Bank",
     "techs": ["React"],
     "role": "Développement",
-    "description": "Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare. Nisi porta lorem mollis aliquam ut porttitor leo a.",
-    "githubLink": "#",
+    "description": "ArgentBank est un projet réalisé dans un contexte de formation. Il présente les étapes typiques de mise en place d'architecture applicatives destinées à être employées à de plus grandes échelles. Prenant l'exemple d'une application de gestion de transactions bancaires, le projet utilise Redux ainsi que les concepts clés du routing pour définir une organisation cloisonnée et maintenable, afin de garantir l'efficacité du code lors de la montée en échelle de l'application.",
+    "githubLink": "https://github.com/WOS199/PR11-Repo",
     "pics": [
-        "/assets/full-img-2.jpg",
+        "/assets/OC-AB.jpg",
         "/assets/full-img-3.jpg",
         "/assets/full-img-2.jpg",
         "/assets/full-img-3.jpg"

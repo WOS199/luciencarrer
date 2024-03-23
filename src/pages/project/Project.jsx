@@ -33,7 +33,7 @@ const Project = () => {
             <div className="mt-5">
               <a
                 className="hover:bg-racing-lime bg-dark-linen text-alabaster px-4 py-2 rounded-full text-sm hover:text-dark-linen"
-                href="">
+                href={githubLink} target="_blank">
                 Github
               </a>
             </div>

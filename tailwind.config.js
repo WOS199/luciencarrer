@@ -9,6 +9,7 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/assets/terrain-2.jpg')",
+        "hero-mobile": "url('/assets/terrain.jpg')",
       },
       colors: {
         alabaster: "#F0F1E4",

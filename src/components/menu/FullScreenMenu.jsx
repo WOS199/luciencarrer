@@ -12,11 +12,11 @@ const FullScreenMenu = ({ closeMenu }) => {
   },[]);
   return (
     <>
-      <div className="h-screen w-full absolute inset-0 z-20 p-10 bg-racing-lime flex justify-between"
+      <div className="h- full w-full absolute inset-0 z-20 bg-racing-lime flex justify-center items-center"
       >
         <div className="w-full">
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <a
                 href="/"
                 onClick={closeMenu}>
@@ -25,7 +25,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 delay-100 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out delay-100 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Parcours"
                 onClick={closeMenu}>
@@ -34,7 +34,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 delay-150 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out delay-150 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Experience"
                 onClick={closeMenu}>
@@ -43,7 +43,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 delay-200 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out delay-200 font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Skills"
                 onClick={closeMenu}>
@@ -52,7 +52,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 delay-[250ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out delay-[250ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Projects"
                 onClick={closeMenu}>
@@ -61,7 +61,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <p className={`${customTranslate} transition-all duration-300 delay-[300ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
+            <p className={`${customTranslate} text-center mx-auto transition-all duration-500 ease-in-out delay-[300ms] font-light italic font-secondary text-4xl md:text-8xl w-fit text-dark-linen mt-4 hover:underline decoration-4 underline-offset-8`}>
               <HashLink
                 to="/content#Footer"
                 onClick={closeMenu}>
@@ -70,7 +70,7 @@ const FullScreenMenu = ({ closeMenu }) => {
             </p>
           </div>
         </div>
-        <a href="#" onClick={handleCloseMenu}>
+        <a className="absolute top-10 right-10" href="#" onClick={handleCloseMenu}>
           {menuClose}
         </a>
       </div>
