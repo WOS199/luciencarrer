@@ -16,12 +16,12 @@ const Footer = () => {
           </div>
           <div className="flex justify-between gap-10">
             <div>
-              <a href="#" className="text-xl md:text-xl lg:text-3xl hover:bg-racing-lime">
+              <a href="https://www.linkedin.com/in/lucien-carrer-205bb1297/" className="text-xl md:text-xl lg:text-3xl hover:bg-racing-lime">
                 LinkedIn ↘
               </a>
             </div>
             <div>
-              <a href="#" className="text-xl md:text-xl lg:text-3xl hover:bg-racing-lime">
+              <a href="https://github.com/WOS199" className="text-xl md:text-xl lg:text-3xl hover:bg-racing-lime">
                 Github ↘
               </a>
             </div>

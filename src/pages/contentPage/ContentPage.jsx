@@ -188,7 +188,8 @@ const ContentPage = () => {
               </p>
             </div>
           </div>
-          <div className={`col-span-2 lg:col-span-1 mt-10 md:mt-0 transition-all duration-1000 delay-300 ${
+          <div
+            className={`col-span-2 lg:col-span-1 mt-10 md:mt-0 transition-all duration-1000 delay-300 ${
               ref4InView ? "opacity-100 translate-x-5" : "opacity-0"
             }`}>
             <p className="text-sm font-normal text-dark-linen pb-5">
@@ -231,12 +232,20 @@ const ContentPage = () => {
         sectionImage="demostratif-imac-h.jpg"
         sectionTitle="Skills"></SectionChapter>
       <div className="section-content-container bg-alabaster px-10 md:pr-52">
-        <div className="flex flex-col lg:flex-row justify-between gap-20" ref={ref5}>
+        <div
+          className="flex flex-col lg:flex-row justify-between gap-20"
+          ref={ref5}>
           <div className="w-1/2">
-            <h3 className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen ${ref5InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
+            <h3
+              className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen ${
+                ref5InView ? "opacity-100 -translate-y-5" : "opacity-10"
+              }`}>
               Savoir faire
             </h3>
-            <p className={`text-xs md:text-sm font-extralight transition-all duration-1000 text-dark-linen w-full delay-500 ${ref5InView ? 'opacity-100' : 'opacity-0'}`}>
+            <p
+              className={`text-xs md:text-sm font-extralight transition-all duration-1000 text-dark-linen w-full delay-500 ${
+                ref5InView ? "opacity-100" : "opacity-0"
+              }`}>
               Développement d'application web, MERN stack, expérience en TALL
               stack, gestion de versions, obtimisation des performances,
               connaissances en SEO et accessibilité, direction artistique
@@ -246,10 +255,16 @@ const ContentPage = () => {
             </p>
           </div>
           <div className="w-1/2">
-            <h3 className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen delay-300 ${ref5InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
+            <h3
+              className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen mb-5 border-b-[1px] pb-3 border-dark-linen delay-300 ${
+                ref5InView ? "opacity-100 -translate-y-5" : "opacity-10"
+              }`}>
               Savoir être
             </h3>
-            <p className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-700 text-dark-linen w-full ${ref5InView ? 'opacity-100' : 'opacity-0'}`}>
+            <p
+              className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-700 text-dark-linen w-full ${
+                ref5InView ? "opacity-100" : "opacity-0"
+              }`}>
               Esprit d'équipe, adaptabilité, rigueur et organisation,
               communication et écoute, proactivité, gestion du temps et de la
               charge de travail, capacités d'apprentissage et curiosité.
@@ -257,17 +272,28 @@ const ContentPage = () => {
           </div>
         </div>
       </div>
-      <div className="Skills-list-container bg-alabaster px-10 md:pr-52 py-32" ref={ref6}>
+      <div
+        className="Skills-list-container bg-alabaster px-10 md:pr-52 py-32"
+        ref={ref6}>
         <div className="flex flex-col lg:flex-row gap-20">
           <div>
-            <h3 className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen border-b-[1px] pb-3 border-dark-linen ${ref6InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
+            <h3
+              className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 font-extralight text-dark-linen border-b-[1px] pb-3 border-dark-linen ${
+                ref6InView ? "opacity-100 -translate-y-5" : "opacity-10"
+              }`}>
               Développement
             </h3>
-            <p className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-500 text-dark-linen py-5 max-w-[80%] ${ref6InView ? 'opacity-100' : 'opacity-0'}`}>
+            <p
+              className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-500 text-dark-linen py-5 max-w-[80%] ${
+                ref6InView ? "opacity-100" : "opacity-0"
+              }`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
             </p>
-            <ul className={`font-light transition-all duration-1000 delay-500 ${ref6InView ? 'opacity-100' : 'opacity-0'}`}>
+            <ul
+              className={`font-light transition-all duration-1000 delay-500 ${
+                ref6InView ? "opacity-100" : "opacity-0"
+              }`}>
               <li className="pb-1 hover:underline">html5 ↘</li>
               <li className="pb-1 hover:underline">css3 ↘</li>
               <li className="pb-1 hover:underline">JavaScript ↘</li>
@@ -282,14 +308,23 @@ const ContentPage = () => {
             </ul>
           </div>
           <div>
-            <h3 className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 delay-300 font-extralight text-dark-linen border-b-[1px] pb-3 border-dark-linen ${ref6InView ? 'opacity-100 -translate-y-5' : 'opacity-10'}`}>
+            <h3
+              className={`text-2xl md:text-3xl lg:text-4xl transition-all duration-1000 delay-300 font-extralight text-dark-linen border-b-[1px] pb-3 border-dark-linen ${
+                ref6InView ? "opacity-100 -translate-y-5" : "opacity-10"
+              }`}>
               Design
             </h3>
-            <p className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-700 text-dark-linen py-5 max-w-[80%] ${ref6InView ? 'opacity-100' : 'opacity-0'}`}>
+            <p
+              className={`text-xs md:text-sm font-extralight transition-all duration-1000 delay-700 text-dark-linen py-5 max-w-[80%] ${
+                ref6InView ? "opacity-100" : "opacity-0"
+              }`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
             </p>
-            <ul className={`font-light transition-all duration-1000 delay-700 ${ref6InView ? 'opacity-100' : 'opacity-0'}`}>
+            <ul
+              className={`font-light transition-all duration-1000 delay-700 ${
+                ref6InView ? "opacity-100" : "opacity-0"
+              }`}>
               <li className="pb-1 hover:underline">Figma ↘</li>
               <li className="pb-1 hover:underline">Adobe Xd ↘</li>
               <li className="pb-1 hover:underline">Adobe Illustrator ↘</li>
@@ -309,19 +344,17 @@ const ContentPage = () => {
         sectionLetter="C"
         sectionImage="full-img-2.jpg"
         sectionTitle="Projects"></SectionChapter>
-      <div className="section-content-container bg-alabaster px-10 md:pr-52" ref={ref7}>
-        <p className={`text-4xl font-extralight text-dark-linen md:max-w-[75%] leading-tight pb-20 transition-all duration-1000 ${ref7InView ? 'opacity-100' : 'opacity-10'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna{" "}
-          <span className="underline decoration-2 underline-offset-4 hover:bg-racing-lime">
-            aliqua↘
-          </span>
-          . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea{" "}
-          <span className="underline decoration-2 underline-offset-4 hover:bg-racing-lime">
-            comodo↘
-          </span>{" "}
-          consequat.
+      <div
+        className="section-content-container bg-alabaster px-10 md:pr-52"
+        ref={ref7}>
+        <p
+          className={`text-4xl font-extralight text-dark-linen md:max-w-[75%] leading-tight pb-20 transition-all duration-1000 ${
+            ref7InView ? "opacity-100" : "opacity-10"
+          }`}>
+          Les projets sur lesquels j'interviens reflètent la pluralité de mes
+          aptitudes. Fruits de collaboration avec des studios, ou concepts
+          développés dans le cadre de montée en compétence, ils témoignent de
+          mon approche globale et polyvalente du métier.
         </p>
       </div>
       <div className="projects-gallery-container bg-alabaster sm:px-10 md:pr-52 pb-32">
