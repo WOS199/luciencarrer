@@ -7,9 +7,11 @@ const FullScreenMenu = ({ closeMenu }) => {
     closeMenu();
   };
   const [customTranslate, setCustomTranslate] = useState('translate-y-full');
+
   useEffect(() => {
     setCustomTranslate('translate-y-0');
   },[]);
+  
   return (
     <>
       <div className="h- full w-full absolute inset-0 z-20 bg-racing-lime flex justify-center items-center"

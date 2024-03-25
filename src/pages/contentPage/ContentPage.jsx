@@ -339,7 +339,7 @@ const ContentPage = () => {
         </div>
       </div>
       <SectionChapter
-        sectionLetter="C"
+        sectionLetter="D"
         sectionImage="full-img-2.jpg"
         sectionTitle="Projects"></SectionChapter>
       <div
